@@ -1,4 +1,23 @@
+body {
+    background-image:url('imagens/—Pngtree—fun cartoon background featuring a_8468525.jpg');
+}
+
 .mosquito1 {
     height: 50px;
     width: 50px;
 }
+
+.mosquito2 {
+    height: 70px;
+    width: 70px;
+}
+
+.mosquito3 {
+    height: 110px;
+    width: 110px;
+}
+
+.ladoB {
+    transform: scaleX(-1);
+}
+
