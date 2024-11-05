@@ -23,3 +23,6 @@ body {
     transform: scaleX(-1);
 }
 
+.painel {
+    position: absolute;
+}
