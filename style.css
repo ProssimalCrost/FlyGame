@@ -25,4 +25,24 @@ body {
 
 .painel {
     position: absolute;
+    width: 220px; 
+    height: auto;
+    padding: 5px; /* Pode ajustar para dar um espaço interno */
+    bottom: 0;
+    border-top: 1px solid white;
+    background-color: rgba(252, 252, 217, 0.7); /* Opacidade embutida na cor */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre elementos */
+}
+
+.vidas {
+    display: flex; /* Ajusta para exibir as imagens de vidas lado a lado */
+    gap: 5px; /* Espaço entre os ícones de vida */
+}
+
+.cronometro {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto; /* Alinha o cronômetro à direita do painel */
 }
