@@ -33,6 +33,9 @@ function posicaoRandomica() {
      mosquito.style.top = posicaoY + 'px'
      mosquito.style.position = 'absolute'
      mosquito.id = 'mosquito'
+     mosquito.onclick = function() {
+          this.remove()
+     }
 
      document.body.appendChild(mosquito)
 }
