@@ -9,8 +9,8 @@
 
 <body onresize="TamanhoAutomatico()">
     
- <div class="painel">
-      <div class="vidas">
+<div class="painel">
+    <div class="vidas">
         <img id="v1" src="\Flygame\imagens\coracao_cheio.png" alt="coracação vazio">
         <img id="v2" src="\Flygame\imagens\coracao_cheio.png" alt="coracação completo">
         <img id="v3" src="\Flygame\imagens\coracao_cheio.png" alt="coracação completo">
@@ -19,8 +19,16 @@
           Tempo restante: ?
         </div>
 
-      </div>
-  </div>
+    </div>
+</div>
+
+<div>
+  <audio autoplay> <!--agora com autoplay e sem controls-->
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+</div>
 
     <script>
       posicaoRandomica()

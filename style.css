@@ -2,6 +2,7 @@ body {
     background-image: url(imagens/2306.w063.n005.144B.p1.144.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 31, 0.973);
 }
 
 .mosquito1 {
@@ -24,8 +25,8 @@ body {
 }
 
 .painel {
-    position: absolute;
-    width: 220px; 
+    position: end;
+    width: 280px; 
     height: auto;
     padding: 5px; /* Pode ajustar para dar um espaço interno */
     bottom: 0;
