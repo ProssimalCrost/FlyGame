@@ -72,3 +72,8 @@ function ladoAleatorio() {
 
      }
 }
+
+function tocarSom() {
+     const audio = new Audio('caminho/para/seu_audio.mp3');
+     audio.play();
+ }
