@@ -9,28 +9,31 @@
 
 <body onresize="TamanhoAutomatico()">
     
-<div class="painel">
-    <div class="vidas">
-        <img id="v1" src="\Flygame\imagens\coracao_cheio.png" alt="coracação vazio">
-        <img id="v2" src="\Flygame\imagens\coracao_cheio.png" alt="coracação completo">
-        <img id="v3" src="\Flygame\imagens\coracao_cheio.png" alt="coracação completo">
+  <div class="painel">
+      <div class="vidas">
+          <img id="v1" src="\Flygame\imagens\coracao_cheio.png" alt="coracação vazio">
+          <img id="v2" src="\Flygame\imagens\coracao_cheio.png" alt="coracação completo">
+          <img id="v3" src="\Flygame\imagens\coracao_cheio.png" alt="coracação completo">
 
-        <div class="cronometro">
-          Tempo restante: ?
-        </div>
+          <div class="cronometro">
+            Tempo restante: ?
+          </div>
 
-    </div>
-</div>
+      </div>
+  </div>
 
-<div>
-  <button onclick="tocarSom()">Clique para Tocar Som</button>
-</div>
+  <div id="buttonVolume">
+    <button id="toggleAudio" class="Icon">
+      <img src="Icon/Volume.svg" alt="" class="Volume" style="display: none;">
+      <img src="Icon/SemVolume.svg" alt="" class="SemVolume">
+      </button>
+  </div>
 
     <script>
       posicaoRandomica()
       setInterval(function() {
         posicaoRandomica()
-      }, 1000)
+      }, 2000)
     </script>
 
   </body>

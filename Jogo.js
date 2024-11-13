@@ -46,7 +46,6 @@ function posicaoRandomica() {
 
      document.body.appendChild(mosquito)
 }
-
 function tamanhoAleatorio() {
      var classe = Math.floor(Math.random() *  3)
      console.log(classe)
@@ -72,8 +71,30 @@ function ladoAleatorio() {
 
      }
 }
+function BotaoSom() {
+     document.addEventListener('DOMContentLoaded', function() {
+          const audio = new Audio('Audio/game_song.mp3');
+          audio.loop = true;
+          let isPlaying = false;
 
-function tocarSom() {
-     const audio = new Audio('caminho/para/seu_audio.mp3');
-     audio.play();
- }
+          document.getElementById('toggleAudio').addEventListener('click', function() {
+               const muteIcon = document.querySelector('.Volume');
+               const volumeIcon = document.querySelector('.SemVolume');
+               if (isPlaying) {
+                    audio.pause();
+                    isPlaying = false;
+                    volumeIcon.style.display = 'block';
+                    muteIcon.style.display = 'none';
+               } else {
+                    audio.play();
+                    isPlaying = true;
+                    volumeIcon.style.display = 'none';
+                    muteIcon.style.display = 'block';
+               }
+          });
+     });
+}
+
+BotaoSom();
+
+

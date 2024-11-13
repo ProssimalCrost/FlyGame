@@ -25,25 +25,42 @@ body {
 }
 
 .painel {
-    position: end;
     width: 280px; 
     height: auto;
-    padding: 5px; /* Pode ajustar para dar um espaço interno */
+    padding: 5px; 
     bottom: 0;
     border-top: 1px solid white;
-    background-color: rgba(252, 252, 217, 0.7); /* Opacidade embutida na cor */
-    display: flex;
+    background-color: rgb(166, 232, 128); 
+    display: inline-flex;
     align-items: center;
-    gap: 10px; /* Espaço entre elementos */
+    gap: 10px; 
+    border-radius: 20px;
+    margin: 0 5px 0 10px;
 }
 
 .vidas {
-    display: flex; /* Ajusta para exibir as imagens de vidas lado a lado */
-    gap: 5px; /* Espaço entre os ícones de vida */
+    display: flex; 
+    gap: 5px; 
 }
 
 .cronometro {
     font-size: 20px;
     font-weight: bold;
-    margin-left: auto; /* Alinha o cronômetro à direita do painel */
+    margin-left: auto; 
+}
+
+.icon {
+    display: inline-flex;
+    height: 35px;
+    width: 40px;
+    background-color: rgb(238, 240, 111);
+    border-radius: 30%;
+}
+.icon img {
+    height: 30px;
+    width: 30px;
+}
+#buttonVolume {
+    display: inline-block;
+
 }
