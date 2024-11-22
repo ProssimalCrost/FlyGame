@@ -17,9 +17,9 @@
           <img id="v3" src="\Flygame\imagens\coracao_cheio.png" alt="coracação completo">
 
           <div class="cronometro">
-            Tempo restante: ?
+            Tempo restante: <span id="cronometro"></span>
           </div>
-
+          
       </div>
   </div>
 
@@ -31,8 +31,9 @@
   </div>
 
     <script>
-      posicaoRandomica()
-      setInterval(function() {
+      document.getElementById('cronometro').innerHTML = tempo
+
+var CriarMosquito = setInterval(function() {
         posicaoRandomica()
       }, 2000)
     </script>
